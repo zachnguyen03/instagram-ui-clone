@@ -20,7 +20,7 @@ const Form = styled.form`
 
 const Header = () => {
     return(
-        <div className="container">
+        <div className="">
             <nav className="navbar navbar-collapse justify-content-between sticky-top">
                 <a href="#" className="navbar-brand"><Typography src={typography} alt="typography" /></a>
                 <Form className="form-inline my-2 my-lg-0 ml-auto">
@@ -32,7 +32,8 @@ const Header = () => {
                     <li className="nav-item"><FaGithub size={40} style={{margin: '10px'}}/></li>
                     <li className="nav-item"><img src="https://cdn.drawception.com/images/avatars/647493-B9E.png" alt="avatar" style={{height: '40px', width: '40px', borderRadius: '50%', margin: 'auto'}}/></li>
                 </ul>
-            </nav>        
+            </nav>
+            <hr style={{margin: 0}} />        
         </div>
     )
 }
