@@ -9,23 +9,20 @@ import { FaDev, FaHackerrank, FaGithub } from 'react-icons/fa'
 const Typography = styled.img`
     float: left;
     height: 20%;
-    width: 20%;
+    width: 100px;
     padding-top: 5px;
 `
 
-const Form = styled.form`
-    text-align: center;
-`
 
 
 const Header = () => {
     return(
         <div className="">
-            <nav className="navbar navbar-collapse justify-content-between sticky-top">
+            <nav className="navbar navbar-collapse justify-content-between sticky-top" style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
                 <a href="#" className="navbar-brand"><Typography src={typography} alt="typography" /></a>
-                <Form className="form-inline my-2 my-lg-0 ml-auto">
-                    <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
-                </Form>
+                <form className="form-inline">
+                    <input className="form-control" type="search" placeholder="Search" aria-label="Search" style={{justifyContent: 'center', marginLeft: '100px'}}/>
+                </form>
                 <ul className="nav justify-content-end">
                     <li className="nav-item"><FaDev size={40} style={{margin: '10px'}}/></li>
                     <li className="nav-item"><FaHackerrank size={40} style={{margin: '10px'}}/></li>
